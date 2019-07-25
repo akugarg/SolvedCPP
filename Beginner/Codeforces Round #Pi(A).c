@@ -2,6 +2,7 @@
 #include<math.h>
 #include<string.h>
 #include <stdlib.h>
+//https://codeforces.com/contest/567/problem/A
 int min(int x,int y)
 {
     if(x<y)
