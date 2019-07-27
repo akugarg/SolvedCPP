@@ -1,0 +1,46 @@
+#include <iostream> 
+#include <vector> 
+#include <string>
+#include <cstring>
+#include <bits/stdc++.h>
+#define ll long long
+using namespace std; 
+//http://codeforces.com/contest/796/problem/B
+int main()
+{
+    long n,m,k;
+    cin>>n>>m>>k;
+    long a,b;
+    long pos=1;
+    long fix=0;
+    int h[m];
+    int c=0;
+    for(long i=0;i<m;i++)
+    {
+      cin>>h[i];     
+    }
+    for(long i=0;i<k;i++)
+    {
+         cin>>a>>b;
+         if(a==pos)
+         pos=b;
+         else if(b==pos)
+         pos=a;
+         for(long j=0;j<m;j++)
+         {
+               if(pos==h[j]&&c==0){
+                     c++;
+                     fix=pos;
+                     break;
+               }
+              
+         }
+      //    cout<<pos<<endl;
+      //    cout<<fix<<endl;
+    }
+    if(fix!=0)
+    cout<<fix;
+    else
+    cout<<pos;
+    return 0;
+}
