@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int t,n;
+	cin>>t;
+	while(t--)
+	{
+		string sr;
+		cin>>n;
+		char p='a';
+		while(n--)
+		{
+			sr+=p;
+			p++;
+			if(p>'z')
+			p='a';
+		}
+		cout<<sr<<endl;//counting just same numbered indices.
+	}
+	return 0;
+}
