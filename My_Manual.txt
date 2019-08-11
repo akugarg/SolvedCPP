@@ -1,0 +1,25 @@
+For finding lcm and gcd inbuilt functions
+{
+      //FOR LCM  
+  #include <boost/math/common_factor.hpp>
+  boost::math::lcm(1.0,20) 
+
+   //FOR GCD
+  #include <algorithm>
+  int gcd= __gcd(num1, num2);
+}
+
+Setting a no. as infinity
+{
+    #include <math.h>
+    int no= INFINITY;
+    int no= -INFINITY;
+}
+
+Setting pairs in Cpp
+{
+    #include <utility>
+    pair(data_type1,data_type2) pp;
+    pp.first = ...
+    pp.second = ...
+}
