@@ -23,3 +23,10 @@ Setting pairs in Cpp
     pp.first = ...
     pp.second = ...
 }
+
+Sets in Cpp
+{
+   #include <sets>
+   each element is unique.
+   set<int> gquiz;
+}
