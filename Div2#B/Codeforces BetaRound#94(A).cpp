@@ -12,7 +12,7 @@ int main()
      for(int i=0;i<m;i++)
      {
           cin>>a>>b;
-          arr[a-1][b-1]=1;
+          arr[a-1][b-1]=1; //matrix for edges and nodes
           arr[b-1][a-1]=1;
      }
          
@@ -34,6 +34,7 @@ int main()
                    st1.insert(i);
                    ans=1;
              }
+            
        }
        if(ans==0)
        break;
