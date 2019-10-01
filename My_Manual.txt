@@ -30,3 +30,5 @@ Sets in Cpp
    each element is unique.
    set<int> gquiz;
 }
+**** vectors most preferably used for pushing or removing elements from the back 
+for doing so from front use queue instead.******
