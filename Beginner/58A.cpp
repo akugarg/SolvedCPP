@@ -4,7 +4,7 @@
 #include <cstring>
 #define ll long long
 using namespace std;
-
+//https://codeforces.com/problemset/problem/58/A
 int main()
 {
       ios_base::sync_with_stdio(false);
