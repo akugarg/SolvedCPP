@@ -18,7 +18,7 @@ int main()
         while(n--)
         {
             cin>>x>>y>>z;
-            vect.pb(make_pair(y-x,z));
+            vect.pb(make_pair(y-x,z));//transforming the coordinates to the new rotated axes i.e at an angle of 45
             sum+=z;
         }
         // cout<<sum<<endl;
@@ -30,14 +30,14 @@ int main()
         int flag=0;
         for(int i=0;i<vect.size();i++)
         {
-            if(sum-vect[i].second==prev)
+            if(sum-vect[i].second==prev) //considering he no on line itself
             {
                 flag=1;
                 break;
             }
             prev+=vect[i].second;
             // cout<<prev<<sum<<endl;
-            if(sum-prev==prev)
+            if(sum-prev==prev)//not excluding the no .
             {
                 // cout<<"*";
                flag=1;
