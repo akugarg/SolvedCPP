@@ -5,6 +5,9 @@ using namespace std;
 //https://www.hackerearth.com/practice/algorithms/searching/binary-search/practice-problems/algorithm/picu-bank-09e29493/editorial/
 int main() {
 	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
 	ll d,a,m,b,x;
 	cin>>d>>a>>m>>b>>x;
 	ll amt=x-d;
@@ -18,6 +21,6 @@ int main() {
     }
     else
     days+=m+1;
-	cout<<days;
+	cout<<days<<endl;}
 	return 0;
 }
