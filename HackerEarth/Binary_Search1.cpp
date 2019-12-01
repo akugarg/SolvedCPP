@@ -12,9 +12,9 @@ int main() {
 	int s=amt/(a*m+b);
 	days+=s*(m+1);
     int l=amt%(a*m+b);
-    if(l<=a*m-b)
+    if(l<=a*m)
     {
-        days+=ceil((double)l/m);
+        days+=ceil((double)l/a);
     }
     else
     days+=m+1;
