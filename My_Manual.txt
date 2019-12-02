@@ -12,8 +12,8 @@ For finding lcm and gcd inbuilt functions
 Setting a no. as infinity
 {
     #include <math.h>
-    int no= INFINITY;
-    int no= -INFINITY;
+    double no= INFINITY;
+    double no= -INFINITY;
 }
 
 Setting pairs in Cpp
