@@ -1,0 +1,43 @@
+#include <iostream>
+#include <bits/stdc++.h>
+using namespace std;
+//https://www.hackerearth.com/practice/algorithms/searching/binary-search/practice-problems/algorithm/c-impresses-everyone/
+int main() 
+{
+    int n;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++)
+    cin>>arr[i];
+    for(int i=n-2;i>=0;i--)
+    arr[i]+=arr[i+1];
+    sort(arr,arr+n);
+    int q;
+    cin>>q;
+    int ans;
+    int t;int id;
+    while(q--)
+    {
+       cin>>t;
+       id=upper_bound(arr,arr+n,t)-arr;
+      if(arr[id-1]==t)
+      ans=id-1;
+      else
+      ans=id;
+      if(n%2!=0){
+      if(ans%2==0)
+      cout<<"A"<<endl;
+      else
+      cout<<"B"<<endl; 
+      }
+      else
+      {
+      if(ans%2==0)
+      cout<<"B"<<endl;
+      else
+      cout<<"A"<<endl;
+      }
+      
+    }
+	return 0;
+}
