@@ -1,7 +1,7 @@
 #include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
-
+//https://www.hackerearth.com/practice/algorithms/greedy/basics-of-greedy-algorithms/practice-problems/algorithm/hunger-games/
 int main()
 {
     int n;
